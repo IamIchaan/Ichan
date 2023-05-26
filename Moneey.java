@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ */
+package moneey;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Ichan
+ */
+public class Moneey {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner duit = new Scanner(System.in);
+        System.out.println("\t\tBANK NEKOPOI\t\t");
+        System.out.print("Uang Yang Dimasukkan \t\t= ");
+        int jumlah = duit.nextInt();
+        int ratusribu = jumlah/100000;
+        int sisa = jumlah-(ratusribu * 100000);
+        int limaplhribu = (int)(sisa/50000);
+        sisa = sisa-(limaplhribu * 50000);
+        int duaplhribu = (int)(sisa/20000);
+        sisa = sisa-(duaplhribu * 20000);
+        int seplhribu = (int)(sisa/10000);
+        sisa = sisa-(seplhribu * 10000);
+        int limaribu = (int)(sisa/5000);
+        sisa = sisa-(limaribu * 5000);
+        int duaribu = (int)(sisa/2000);
+        sisa = sisa- (duaribu * 2000);
+        int seribu = (int)(sisa/1000);
+        sisa = sisa- (seribu * 1000);
+        
+        System.out.println("Jumlah Duit \t\t\t= "+jumlah);
+        System.out.println("Jumlah Seratus Ribu \t\t= "+ratusribu);
+        System.out.println("Jumlah Limaplh Ribu \t\t= "+limaplhribu);
+        System.out.println("Jumlah Duaplh Ribu \t\t= "+duaplhribu);
+        System.out.println("Jumlah Seplh Ribu \t\t= "+seplhribu);
+        System.out.println("Jumlah Lima Ribu \t\t= "+limaribu);
+        System.out.println("Jumlah Dua Ribu \t\t= "+duaribu);
+        System.out.println("Jumlah Seribu \t\t\t= "+seribu);
+    }
+    
+}
